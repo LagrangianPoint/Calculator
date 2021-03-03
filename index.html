@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <title>Calculator</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p>
+
+
+  <div id="calculator" class="calculator-wrapper"  >
+    <input type="text" name="userinput" class="calculator-input" v-model="calc_input" >
+
+    <div class="row">
+      <div class="col-md-3"><Misc operation="AC"></Misc></div>
+      <div class="col-md-3"><Misc operation="+/-"></Misc></div>
+      <div class="col-md-3"><Misc operation="%"></Misc></div>
+      <div class="col-md-3"><Operator operation="÷"></Operator></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><Digit number="7"></Digit></div>
+      <div class="col-md-3"><Digit number="8"></Digit></div>
+      <div class="col-md-3"><Digit number="9"></Digit></div>
+      <div class="col-md-3"><Operator operation="×"></Operator></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><Digit number="4"></Digit></div>
+      <div class="col-md-3"><Digit number="5"></Digit></div>
+      <div class="col-md-3"><Digit number="6"></Digit></div>
+      <div class="col-md-3"><Operator operation="-"></Operator></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3"><Digit number="1"></Digit></div>
+      <div class="col-md-3"><Digit number="2"></Digit></div>
+      <div class="col-md-3"><Digit number="3"></Digit></div>
+      <div class="col-md-3"><Operator operation="+"></Operator></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6"><Digit number="0"></Digit></div>
+      <div class="col-md-3"><Dot></Dot></div>
+      <div class="col-md-3"><Equal></Equal></div>
+    </div>
+
+  </div>
+
+</p>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<script src="lib/Core.js"></script>
+<script src="lib/components/Digit.js"></script>
+<script src="lib/components/Dot.js"></script>
+<script src="lib/components/Equal.js"></script>
+<script src="lib/components/Operator.js"></script>
+<script src="lib/components/Misc.js"></script>
+<script src="lib/Calculator.js"></script>
+
+</body>
+</html>
